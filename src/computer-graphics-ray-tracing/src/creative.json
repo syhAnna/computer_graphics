@@ -1,0 +1,97 @@
+{
+  "camera": {
+    "type": "perspective",
+    "focal_length": 3,
+    "eye": [0,0,5],
+    "up": [0,1,0],
+    "look": [0,0,-1],
+    "height": 1,
+    "width": 1.7777777778
+  },
+  "materials": [
+    {
+      "name": "pink plastic",
+      "ka": [0.9, 0.5, 0.9],
+      "kd": [0.9, 0.5, 0.9],
+      "ks": [0.5,0.5,0.5],
+      "km": [0.04,0.04,0.04],
+      "phong_exponent": 800
+    },
+    {
+      "name": "yellow plastic",
+      "ka": [0.9, 0.9, 0.25],
+      "kd": [0.9, 0.9, 0.25],
+      "ks": [0.5,0.5,0.5],
+      "km": [0.04,0.04,0.04],
+      "phong_exponent": 800
+    },
+    {
+      "name": "purple plastic",
+      "ka": [0.6, 0.25, 0.95],
+      "kd": [0.6, 0.25, 0.95],
+      "ks": [0.5,0.5,0.5],
+      "km": [0.04,0.04,0.04],
+      "phong_exponent": 800
+    },
+    {
+      "name": "blue plastic",
+      "ka": [0.4, 0.66, 0.95],
+      "kd": [0.4, 0.66, 0.95],
+      "ks": [0.5,0.5,0.5],
+      "km": [0.04,0.04,0.04],
+      "phong_exponent": 800
+    },
+    {
+      "name": "Lambertian blue",
+      "ka": [0.5, 0.9, 0.9],
+      "kd": [0.5, 0.9, 0.9],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.3,0.3,0.3],
+      "phong_exponent": 20
+    }
+  ],
+  "lights":[
+    {
+      "type": "directional",
+      "direction": [1,0,-1],
+      "color": [0.8,0.8,0.8]
+    },
+    {
+      "type": "point",
+      "position": [-1,2,0],
+      "color": [0.8,0.8,0.8]
+    }
+  ],
+  "objects": [
+    {
+      "type": "sphere",
+      "material": "pink plastic",
+      "center": [0.5,0,0.1],
+      "radius": 0.4
+    },
+    {
+      "type": "sphere",
+      "material": "yellow plastic",
+      "center": [0.1,0.2,1],
+      "radius": 0.2
+    },
+    {
+      "type": "sphere",
+      "material": "purple plastic",
+      "center": [-1,0,-1],
+      "radius": 0.5
+    },
+    {
+      "type": "sphere",
+      "material": "blue plastic",
+      "center": [0,0,-4],
+      "radius": 0.3
+    },
+    {
+      "type": "plane",
+      "material": "Lambertian blue",
+      "point": [0,-0.5,0],
+      "normal": [0,1,0]
+    }
+  ]
+}
